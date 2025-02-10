@@ -46,11 +46,15 @@ button:hover {
 #yes-btn {
   background-color: #ff69b4;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 #no-btn {
   background-color: #dcdcdc;
   color: black;
+  position: relative;
+  z-index: 2;
 }
 
 #response-overlay {
