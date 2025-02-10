@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffe4e1;
+  color: #ff1493;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 30vh;
+  width: 50vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.animation {
+  width: 200px;
+  margin: 20px 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#yes-btn {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#no-btn {
+  background-color: #dcdcdc;
+  color: black;
+}
+
+#response-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.response-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slide-in 0.5s ease;
+  max-width: 400px; /* Maximale Breite der Box */
+  width: 90%; /* Breite der Box auf 90% des Bildschirms setzen */
+}
+
+.response-box h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animation für das Overlay */
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
