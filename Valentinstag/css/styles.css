@@ -27,17 +27,18 @@ h1 {
 .animation {
   width: 200px;
   margin: 20px 0;
-  margin-left: -15%; /* Container weiter nach links verschieben */
-}
+  margin-left: -15%;
+  }
 
 button {
   font-size: 20px;
   padding: 10px 20px;
-  margin: 5px; /* Verringere den Margin-Wert, um die Buttons höher zu positionieren */
+  margin: 5px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  top: -30px;
 }
 
 button:hover {
@@ -77,8 +78,15 @@ button:hover {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: slide-in 0.5s ease;
-  max-width: 400px; /* Maximale Breite der Box */
-  width: 90%; /* Breite der Box auf 90% des Bildschirms setzen */
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-gif {
+  width: 250px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
 }
 
 .response-box h2 {
@@ -86,11 +94,15 @@ button:hover {
   margin-bottom: 20px;
 }
 
+button#close-overlay {
+  margin: 20px auto;
+  display: block;
+}
+
 .hidden {
   display: none;
 }
 
-/* Animation für das Overlay */
 @keyframes slide-in {
   from {
     transform: translateY(-50px);
